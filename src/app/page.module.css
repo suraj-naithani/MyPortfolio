@@ -1,0 +1,300 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 0 20px;
+}
+
+.item {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.image {
+  border-radius: 30% 70% 70% 30% / 30% 33% 67% 70%;
+  box-shadow: rgba(38, 255, 191, 1) 0px 5px 15px;
+  animation: img 5s infinite ease alternate;
+  max-width: 100%;
+  width: 40rem;
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes img {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 33% 67% 70%;
+    transform: translateY(-10px);
+  }
+
+  50% {
+    border-radius: 58% 42% 59% 41% / 26% 48% 52% 74%;
+  }
+
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 33% 67% 70%;
+    transform: translateY(10px);
+  }
+}
+
+.text {
+  font-size: 15px;
+  color: #26ffbf;
+  background-color: #222c34;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.text::before {
+  content: 'Developer';
+  animation: textChange infinite 15s linear;
+}
+
+@keyframes textChange {
+  0% {
+    content: "Developer";
+  }
+
+  50% {
+    content: "Freelancer";
+  }
+
+  100% {
+    content: "Web Designer";
+  }
+}
+
+.greet,
+.works {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 50px;
+}
+
+.works {
+  margin-bottom: 30px;
+}
+
+.work {
+  color: #26ffbf;
+}
+
+.desc {
+  margin-bottom: 30px;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.button {
+  border: 1px solid #26ffbf;
+  background-color: #222c34;
+  border-radius: 8px;
+  padding: 10px 25px;
+  transition: all 0.2s linear;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button:hover {
+  background-color: #26ffbf;
+  color: #222831;
+  box-shadow: rgba(38, 255, 191, 1) 0px 5px 15px;
+}
+
+
+/********************* not found ****************** */
+.notFound {
+  max-width: 1366px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notFoundContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_found h1 {
+  display: flex;
+  flex-direction: row;
+  font-size: 20rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+.not_found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  max-width: 60%;
+}
+
+.errorTitle {
+  font-size: 40px;
+}
+
+.errorDesc {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* we use em only in media query for screen width divide by 16 */
+
+@media(max-width:1080px) {
+
+  .title,
+  .errorTitle {
+    font-size: 35px;
+  }
+
+  .name {
+    font-size: 45px;
+  }
+
+  .works,
+  .work,
+  .greet {
+    font-size: 22px;
+  }
+
+  .text,
+  .desc,
+  .errorDesc {
+    font-size: 15px;
+  }
+
+  .not_found h1 {
+    font-size: 18rem;
+  }
+}
+
+@media(max-width:890px) {
+
+  .title,
+  .errorTitle {
+    font-size: 30px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .works,
+  .work,
+  .greet {
+    font-size: 19px;
+  }
+
+  .text,
+  .desc {
+    font-size: 14px;
+  }
+
+  .button,
+  .errorDesc {
+    font-size: 14px;
+  }
+
+  .not_found h1 {
+    font-size: 15rem;
+  }
+
+}
+
+
+@media(max-width:800px) {
+  .name {
+    font-size: 35px;
+  }
+
+  .button {
+    font-size: 13px;
+  }
+
+  .not_found h1 {
+    font-size: 13rem;
+  }
+
+  .not_found {
+    max-width: 100%;
+  }
+}
+
+@media(max-width:733px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .not_found h1 {
+    font-size: 12rem;
+  }
+
+  .errorTitle {
+    font-size: 25px;
+  }
+
+  .errorDesc {
+    font-size: 13px;
+  }
+}
+
+
+@media(max-width:426px) {
+
+  .container {
+    padding: 0;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .works,
+  .work,
+  .greet {
+    font-size: 18px;
+  }
+
+  .text,
+  .desc {
+    font-size: 13px;
+  }
+
+
+  .button {
+    padding: 8px 12px;
+  }
+
+  .not_found h1 {
+    font-size: 10rem;
+  }
+}

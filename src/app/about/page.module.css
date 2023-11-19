@@ -1,0 +1,416 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.imageContainer {
+    position: relative;
+    flex: 1;
+    width: 370px;
+    height: 425px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin: 0 0 5rem 0;
+    object-fit: cover;
+}
+
+.details {
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px 40px;
+}
+
+.heading {
+    font-size: 50px;
+}
+
+
+.desc {
+    font-size: 16px;
+    font-weight: thin;
+    padding: 0 0 0 10px;
+}
+
+.link {
+    font-size: 16px;
+    cursor: pointer;
+    color: #26ffbf;
+    background-color: #222c34;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin: 0px 0 0 10px;
+}
+
+/*  eduction and experince  */
+.qualification {
+    display: flex;
+    gap: 80px;
+    padding: 0 20px;
+    flex: 1;
+    width: 90%;
+}
+
+.education {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.edTitle {
+    font-size: 30px;
+}
+
+.edContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.container_box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1.5rem 3rem;
+    border: 1px solid #26ffbf;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.container_box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #26ffbf;
+    border-radius: 50%;
+}
+
+.container_box::after {
+    content: "";
+    position: absolute;
+    top: 0.7rem;
+    left: -2.4rem;
+    min-width: 0.3rem;
+    height: 100%;
+    background-color: #26ffbf;
+}
+
+.edHead {
+    font-size: 16px;
+}
+
+.edYear {
+    font-size: 14px;
+    color: #26ffbf;
+    font-weight: lighter;
+    position: relative;
+}
+
+.edYear::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #26ffbf;
+    left: -13px;
+    top: 4px;
+    border-radius: 50%;
+
+}
+
+
+/* ***************skills**************** */
+
+.skill {
+    display: flex;
+    gap: 80px;
+    padding: 0 20px;
+    flex: 1;
+    min-width: 100%;
+}
+
+.container_boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+
+.skill_data {
+    display: flex;
+    padding: 2rem 2rem;
+    gap: 3rem;
+    flex: 1;
+}
+
+.cards {
+    width: 100%;
+    padding: 2rem;
+    background-color: #222c34;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #8b8a91;
+}
+
+.html {
+    border: 1px solid #dd4b25;
+}
+
+.css {
+    border: 1px solid #3595cf;
+}
+
+.js {
+    border: 1px solid #efd81d;
+}
+
+.bootstrap {
+
+    border: 1px solid #5e3e8b;
+}
+
+.react {
+    border: 1px solid #00d0f6;
+}
+
+.next {
+    border: 1px solid #000000;
+}
+
+.node {
+    border: 1px solid #88c249;
+}
+
+.express {
+    border: 1px solid #ebd81c;
+}
+
+.mongo {
+    border: 1px solid #409c38;
+}
+
+.sql {
+    border: 1px solid #dd8900;
+}
+
+.git {
+    border: 1px solid #e84e31;
+}
+
+.photoshop {
+    border: 1px solid #081d32;
+
+}
+
+.illustrator {
+    border: 1px solid #310000;
+
+}
+
+.pro {
+    border: 1px solid #a062b0;
+}
+
+.cardItem {
+    display: flex;
+    gap: 10px;
+    font-weight: thin;
+    flex-wrap: wrap;
+}
+
+.items {
+    padding: 4px 8px;
+    background-color: #131c23;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.skillTitle {
+    font-size: 20px;
+}
+
+/* ******************responsive********************** */
+
+@media(max-width:1080px) {
+    .container {
+        padding: 0;
+    }
+
+    .heading {
+        font-size: 47px;
+    }
+
+    .main,
+    .edTitle {
+        font-size: 28px;
+    }
+
+    .desc,
+    .link,
+    .edHead,
+    .items {
+        font-size: 15px;
+    }
+
+    .edYear {
+        font-size: 14px;
+    }
+
+    .skillTitle {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:890px) {
+    .heading {
+        font-size: 45px;
+    }
+
+    .main,
+    .edTitle {
+        font-size: 27px;
+    }
+
+    .desc,
+    .link,
+    .edHead,
+    .items {
+        font-size: 14px;
+    }
+
+    .edYear {
+        font-size: 13.5px;
+    }
+
+    .skillTitle {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:800px) {
+    .button {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:768px) {
+    .imageContainer {
+        display: none;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .main,
+    .edTitle {
+        font-size: 25px;
+    }
+
+
+    .desc,
+    .link,
+    .edHead,
+    .items {
+        font-size: 14px;
+    }
+
+    .edYear {
+        font-size: 13px;
+    }
+
+    .qualification {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 40px;
+        /* padding: 0; */
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .skill_data {
+        flex-direction: column;
+    }
+
+    .details,
+    .social {
+        padding: 0;
+    }
+
+    .skillTitle {
+        font-size: 15px;
+    }
+}
+
+
+@media(max-width:425px) {
+    .container {
+        padding: 0;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .main,
+    .edTitle {
+        font-size: 22px;
+    }
+
+    .desc,
+    .link,
+    .edHead,
+    .items {
+        font-size: 13px;
+    }
+
+    .edYear {
+        font-size: 12px;
+    }
+
+    .skillTitle {
+        font-size: 14px;
+    }
+
+}

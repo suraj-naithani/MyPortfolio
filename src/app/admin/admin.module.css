@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 20px;
+    height: 10%;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #222c34;
+    border: none;
+    outline: none;
+    color: white;
+    border: 1px solid #26ffbf;
+    transition: all 0.3s linear;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #26ffbf;
+    color: black;
+}

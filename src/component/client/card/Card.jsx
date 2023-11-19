@@ -13,9 +13,7 @@ const Card = ({ allData }) => {
                 allData?.map((item) => (
                     <PaperWrapper key={item._id} >
                         <div className={styles.data} >
-                            <div className={styles.image}>
                                 <Image src={item.img} alt="image" className={styles.img} width={300} height={200} />
-                            </div>
                             <div className={styles.card}>
                                 <p className={styles.cardTitle}>{item.title}</p>
                                 <p className={styles.cardLang}>{item.language}</p>

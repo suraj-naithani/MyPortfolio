@@ -35,7 +35,7 @@ export async function getData(currentTab) {
 
 export async function extractAllData(currentTab) {
     try {
-        const response = await fetch(`https://my-portfolio-zeta-topaz.vercel.app/api/${currentTab}/get`, {
+        const response = await fetch(`https://suraj-nathani.vercel.app/api/${currentTab}/get`, {
             method: "GET",
             cache: "no-store",
         });

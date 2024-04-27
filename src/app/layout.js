@@ -11,7 +11,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: 'Suraj Nathani',
-  description: 'Hello It's Me Suraj Naithani And I’m a  MERN Stack Developer',
+  description: 'I am Suraj Naithani, and I am a MERN Stack Developer.',
 };
 
 export default function RootLayout({ children }) {

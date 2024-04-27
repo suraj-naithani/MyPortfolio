@@ -10,8 +10,8 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: 'Home - Web Developer Hub',
-  description: 'Welcome to the Web Developer Hub, your central resource for web development. Explore tutorials, frameworks, coding tips, and stay updated with the latest trends in web development. Level up your skills and build amazing web experiences!',
+  title: 'Suraj Nathani',
+  description: 'Hello It's Me Suraj Naithani And I’m a  MERN Stack Developer',
 };
 
 export default function RootLayout({ children }) {
